@@ -47,9 +47,12 @@ public class IN {
     //public static String url = "192.168.0.100/api";
     //public static String url = "vsundupey.vds.serverdale.com/api";
     //public static String url = "195.128.124.172/api";
-    public static String url = "app.mmka.info/api";
-    public String get_url(){return this.url;}
+    private static final String urlold = "lawyersandnotaries.ru";
+    public static String url = urlold+"/api";
+    public static String get_url(){return url;}
     public void set_url (String url){this.url = url;}
+
+    public final static String url_token =  urlold + "/token";
 
     public static int idt =0;
     public int get_idt(){return this.idt;}
